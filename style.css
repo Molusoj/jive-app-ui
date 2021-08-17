@@ -85,7 +85,7 @@ body {
   background: #000;
 }
 header {
-  background: #24036b;
+  background-image: url("/assets/img/Hero-bg.jpg");
 }
 
 header .navbar .navbar-nav {
@@ -107,7 +107,6 @@ header .navbar .navbar-nav .nav-link.register {
   width: 100vw;
   /* height: 100%; */
   height: 100vh;
-  background-image: url("/assets/img/Hero-bg.jpg");
   background-size: cover;
   /* Flexbox stuff */
   display: flex;
