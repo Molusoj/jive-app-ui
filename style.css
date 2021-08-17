@@ -79,12 +79,25 @@
   font-display: swap;
 }
 
+html {
+  background: #000;
+}
+body {
+  background: #000;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),
+    url("assets/img/jive-bg.jpg");
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-image:linear-gradient(to right, url("assets/img/jive-bg.jpg"), rgba(0,0,0,0)); */
+}
+
 body.home {
   font-family: "Gotham";
   font-style: normal;
   background: #000;
 }
-header {
+.header-home {
   background-image: url("/assets/img/Hero-bg.jpg");
   background-size: cover;
   background-position: 50% 50%;
@@ -287,6 +300,73 @@ footer .footer-socials .footer-socials-item {
   text-align: right;
 }
 
+/* Other ages */
+.sub-hero {
+  width: 100vw;
+  /* height: 100%; */
+  height: 50vh;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-hero .sub-hero-inner .sub-hero-title {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 69px;
+  color: #ffffff;
+}
+
+.sub-hero .sub-hero-inner .sub-hero-text {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.artist-card {
+}
+
+.artist-card .artist-img {
+  width: 100%;
+  /* height: 302px; */
+  /* max-height: 100%; */
+}
+
+.artist-card .artist-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.artist-card .artist-name {
+}
+
+.artist-card .artist-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: end; */
+}
+
+.artist-card .artist-socials .artist-socials-item {
+  padding: 0px 5px;
+  font-size: 20px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: right;
+}
+
+.artist-card .artist-bio {
+  font-size: 16px;
+  /* line-height: 20px; */
+  color: #ffffff;
+}
+
+/* MEdia Screan 987px */
 @media screen and (max-width: 987px) {
   .hero .hero-inner .hero-socials {
     display: none;
