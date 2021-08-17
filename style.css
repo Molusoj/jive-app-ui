@@ -79,13 +79,15 @@
   font-display: swap;
 }
 
-body {
+body.home {
   font-family: "Gotham";
   font-style: normal;
   background: #000;
 }
 header {
   background-image: url("/assets/img/Hero-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 header .navbar .navbar-nav {
@@ -107,7 +109,6 @@ header .navbar .navbar-nav .nav-link.register {
   width: 100vw;
   /* height: 100%; */
   height: 100vh;
-  background-size: cover;
   /* Flexbox stuff */
   display: flex;
   justify-content: center;
@@ -189,8 +190,11 @@ header .navbar .navbar-nav .nav-link.register {
 
 .section-2 {
   height: 100vh;
+  /* width: 100vw; */
   background-image: url("/assets/img/Section-2.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .section-2 .section-title {
@@ -286,5 +290,11 @@ footer .footer-socials .footer-socials-item {
 @media screen and (max-width: 987px) {
   .hero .hero-inner .hero-socials {
     display: none;
+  }
+
+  .section-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50 50;
   }
 }
